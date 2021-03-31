@@ -1,0 +1,35 @@
+/* Decendent Combinators */
+
+ul li a {
+    color: red;
+    text-decoration: none;
+}
+
+article p em strong {
+    color: red;
+}
+
+
+/* Child Combinators */
+
+ul>li {
+    color: gray;
+    border-bottom: 1px solid royalblue;
+}
+
+
+/* Adjacent Combinators */
+
+h4+p {
+    color: red;
+    background-color: azure;
+    border: 1px solid gray;
+}
+
+
+/* General Siblings Combinators */
+
+h3~p {
+    color: palevioletred;
+    text-decoration: line-through;
+}

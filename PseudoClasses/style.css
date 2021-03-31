@@ -1,0 +1,87 @@
+div {
+    height: 200px;
+    width: 200px;
+    background-color: palevioletred;
+    border: 2px solid black;
+}
+
+div:hover {
+    border-radius: 50%;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+a:active {
+    color: orange;
+}
+
+input:focus {
+    background-color: greenyellow;
+}
+
+a[href="http://codingninjas.com"]:visited {
+    color: green;
+}
+
+li:hover {
+    color: blue;
+    cursor: help;
+    background-color: aliceblue;
+}
+
+
+/*  Structrual function of css  */
+
+ul li:first-child {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li:nth-of-type(prime) {
+    color: brown;
+}
+
+
+/*  Suedo element  */
+
+#special::first-letter {
+    color: blue;
+    font-size: larger;
+}
+
+#special::grammar-error {
+    color: midnightblue;
+}
+
+
+/* a::after {
+    content: "♥";
+} */
+
+
+/*  String Matching  */
+
+
+/* starts with */
+
+a[href^="http"] {
+    color: rgb(139, 19, 93);
+}
+
+
+/* ends with */
+
+a[href$="in"] {
+    color: green;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+
+/* starts anywhere */
+
+a[href*="coding"] {
+    color: blueviolet;
+    font-size: larger;
+    background-color: gray;
+}
